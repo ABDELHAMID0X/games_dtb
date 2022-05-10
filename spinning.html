@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainspin.css">
+</head>
+<body>
+<button id="spin">spin</button>  
+<span class="arrow"></span>
+<div class="container">
+    <div class="one">HAKIM</div>
+    <div class="two">ZAML</div>
+    <div class="three">HAMID</div>
+    <div class="four">ZAML</div>
+    <div class="five">DILDO</div>
+    <div class="six">AGAIN</div>
+    <div class="seven">UWU</div>
+    <div class="eight">GR3A</div>
+</div>
+
+
+<script>
+let container =document.querySelector(".container");
+let btn = document.getElementById("spin");
+let number = Math.ceil(Math.random()*3000);
+
+btn.onclick=function(){
+container.style.transform="rotate("+number+"deg)"
+number+=Math.ceil(Math.random()*2500);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
